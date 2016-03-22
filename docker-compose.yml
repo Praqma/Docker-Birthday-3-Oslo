@@ -1,0 +1,13 @@
+nginx:
+  image: nginx:1.9
+# build: ./nginx
+  volumes:
+    - /home/kamran/Projects/Praqma/Docker-Birthday-2016/nginx/:/usr/share/nginx/html/
+  ports:
+    - 80:80
+# links:
+#   - postgres:dbhost
+
+#postgres:
+#  image: postgres:9.4
+
